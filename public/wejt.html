@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Events Near You</title>
+    <link rel="stylesheet" href="wejt.css"> <!-- Link to external CSS file -->
+</head>
+
+<body>
+    <div class="pageTitle light-mode" style="background: url(assets/img/event-bg.jpg) no-repeat">
+        <div class="bg-overlay bg-dark opacity-7"></div>
+        <div class="container1">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-10 col-lg-11 col-md-12">
+                    <div class="titleCaps">
+                        <h2 class="title">Find events near you</h2>
+                        <p class="subtitle">Let's uncover the best events around you and beyond.</p>
+                    </div>
+                    <div class="smartsearch-boxs mt-5">
+                        <form class="searchform">
+                            <div class="grid-container">
+                                <div class="form-group">
+                                    <select class="form-selects" name="category" id="category">
+                                        <option value="">Select Category</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="dateFrom" class="form-control" placeholder="Date From" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="dateTo" class="form-control" placeholder="Date To" />
+                                </div>
+                                <div class="form-group filter-btn-col">
+                                    <button class="btn filter-btn" type="button" id="filterBtn">Filter</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events List Section -->
+    <section>
+        <div class="container">
+            <div class="event-list" id="eventList">
+                <!-- Example event item -->
+                <div class="event-item">
+                    <h4>Event Name</h4>
+                    <p>Event Description</p>
+                </div>
+                <div class="event-item">
+                    <h4>Event Name</h4>
+                    <p>Event Description</p>
+                </div>
+                <!-- Add more event items dynamically here -->
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
